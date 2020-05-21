@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800;900&display=swap");
+
+
+@font-face {
+  font-family: 'Chicken Soup';
+  src: url('fonts/ChickenSoup.woff2') format('woff2'),
+      url('fonts/ChickenSoup.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Chicken Soup';
+  src: url('fonts/ChickenSoup.woff2') format('woff2'),
+      url('fonts/ChickenSoup.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #1a1a1a;
+  --secondary-color: #fe3e38;
+  --bg-color: #fafafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-color);
+}
+
+h1.align-text {
+  font-size: 0;
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute !important;
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.align-items {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.align-items .align-items__logo {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.align-items .align-items__logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.description {
+  width: 100%;
+  text-align: right;
+}
+.description p {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: var(--secondary-color);
+}
+
+.align-items .align-items__form {
+  width: 100%;
+}
+
+.align-items .align-items__input {
+  width: 100%;
+}
+
+.align-items .align-items__input label {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.align-items .align-items__input input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #a0a0a0;
+  outline: 0;
+  border-radius: 8px;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.align-items .align-items__input input:focus {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+.align-items .align-items__input input::placeholder {
+  color: #dadada;
+}
+
+.align-items .align-items__button {
+  width: 100%;
+  text-align: right;
+}
+
+.align-items .align-items__button button{
+  background: var(--secondary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 1.1px;
+  outline: 0;
+}
+
+.align-items__result{
+  width: 100%;
+  height: 0;
+  margin-bottom: 0;
+  opacity: 0;
+	visibility: hidden;
+	transform: translate3d(-150px,0,0);
+	position: absolute;
+	top: 0;
+}
+
+.align-items__result.active{
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  opacity: 1;
+	visibility: visible;
+	transition: .3s;
+	position: relative;
+	top: auto;
+	transform: translate3d(0px,0,0);
+}
+
+.align-items__result .align-items__result--title{
+  position: absolute;
+  top: -41px;
+  left: 0;
+}
+
+.align-items__result .align-items__result--title h2{
+  font-family: 'Chicken Soup';
+  color: var(--secondary-color);
+  font-size: 3.3rem;
+}
+
+.align-items__result .align-items__result--area{
+  position: relative;
+  background: #e7e7e7;
+  border-radius: 8px;
+  padding: 20px 15px;
+}
+
+.result-beef{
+  width: 100%;
+}
+
+.result-beef .icon{
+  width: 100%;
+  text-align: center;
+}
+
+.result-beef .icon.beef:after{
+  content: '\1F356';
+  font-size: 4.4rem;
+}
+
+.result-beef .icon.beer:after{
+  content: '\1F37A';
+  font-size: 4.4rem;
+}
+
+.result-beef .icon.drinks:after{
+  content: '\1F964';
+  font-size: 4.4rem;
+}
+
+.title-result{
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.title-quantity{
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+/* BREAKPOINT 576px */
+@media (min-width: 36em) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* BREAKPOINT 768px */
+@media (min-width: 48em) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* BREAKPOINT 992px */
+@media (min-width: 62em) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* BREAKPOINT 1200px */
+@media (min-width: 75em) {
+  .container {
+    max-width: 1140px;
+  }
+}

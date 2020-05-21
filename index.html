@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcula Churrasco</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="align-text">Calcula Churrasco</h1>
+    <div class="container">
+      <div class="align-items">
+        <div class="align-items__logo">
+          <img src="imagens/logo.png" alt="Calcula Churrasco" />
+          <div class="description">
+            <p>sem erros na hora da compra</p>
+          </div>
+        </div>
+        <!-- /.align-items__logo -->
+
+        <div class="align-items__form">
+          <div class="align-items__input">
+            <label>Adultos</label>
+            <input
+              type="number"
+              name="adultos"
+              id="adultos"
+              placeholder="adultos"
+            />
+          </div>
+          <!-- /.align-items__input -->
+
+          <div class="align-items__input">
+            <label>Crianças</label>
+            <input
+              type="number"
+              name="crianças"
+              id="criancas"
+              placeholder="crianças"
+            />
+          </div>
+          <!-- /.align-items__input -->
+
+          <div class="align-items__input">
+            <label>Duração</label>
+            <input
+              type="number"
+              name="duracao"
+              id="duracao"
+              placeholder="duração"
+            />
+          </div>
+          <!-- /.align-items__input -->
+
+          <div class="align-items__button">
+            <button onclick="calcular()">Calcular</button>
+          </div>
+          <!-- /.align-items__button -->
+        </div>
+        <!-- /.align-items__form -->
+
+        <div class="align-items__result" id="result">
+          <div class="align-items__result--area">
+            <div class="align-items__result--title">
+              <h2>Resultado:</h2>
+            </div>
+            <!-- /.align-items__result--title -->
+
+            <div class="result-beef">
+              <div class="icon beef"></div>
+              <!-- /.icon -->
+
+              <div class="title-result">
+                <p>Carne</p>
+              </div>
+              <!-- /.title-result -->
+
+              <div class="title-quantity" id="result-beef">
+                <p>2.4Kg</p>
+              </div>
+              <!-- /.title-quantity -->
+            </div>
+            <!-- /.result-beef -->
+
+            <div class="result-beef">
+              <div class="icon beer"></div>
+              <!-- /.icon beer-->
+
+              <div class="title-result">
+                <p>Cerveja</p>
+              </div>
+              <!-- /.title-result -->
+
+              <div class="title-quantity" id="result-beer">
+                <p>10 Latas</p>
+              </div>
+              <!-- /.title-quantity -->
+            </div>
+            <!-- /.result-beef -->
+
+            <div class="result-beef">
+              <div class="icon drinks"></div>
+              <!-- /.icon drinks-->
+
+              <div class="title-result">
+                <p>Bebidas</p>
+              </div>
+              <!-- /.title-result -->
+
+              <div class="title-quantity">
+                <p id="result-drinks"></p>
+              </div>
+              <!-- /.title-quantity -->
+            </div>
+            <!-- /.result-beef -->
+
+          </div>
+          <!-- /.align-items__result--area -->
+        </div>
+        <!-- /.align-items__result -->
+      </div>
+      <!-- /.align-items -->
+    </div>
+    <!-- /.container -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
